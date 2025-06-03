@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEA México</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        nav {
+            background: #f4f4f4;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: no-repeat center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .imagen-zoom {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .imagen-zoom img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .imagen-zoom:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ADEA México</h1>
+    <img src="logo.jpg" alt="Logo" class="logo">
+</header>
+
+<div class="contenido">
+    <p class="descripcion">Bienvenido a ADEA México, tu fuente confiable de información sobre tecnología. </p>
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicio.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section>
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Gestión Documental</h3>
+                <p>Organización y digitalización de documentos.</p>
+            </div>
+            <div class="service">
+                <h3>Automatización</h3>
+                <p>Optimización de procesos mediante tecnología avanzada.</p>
+            </div>
+            <div class="service">
+                <h3>Almacenamiento Seguro</h3>
+                <p>Protege tu información con nuestros sistemas de seguridad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Galería Interactiva</h2>
+        <div class="galeria">
+            <div class="imagen-zoom" onclick="mostrarInfo('La gestión de documentos digitales es el proceso de organización, almacenamiento, busqueda y recuperacion de información contenida en documentos digitales')">
+                <img src="gestiondedocumentos.jpeg" alt="Gestión de documentos">
+            </div>
+            <div class="imagen-zoom" onclick="mostrarInfo(' La automatización de procesos empresariales implica utilizar tecnologia de software para realizar tareas que mejoren su eficiencia,productividad y calidad')">
+                <img src="automatizaciontecnologica.jpeg" alt="Automatización tecnológica">
+            </div>
+            <div class="imagen-zoom" onclick="mostrarInfo('La seguridad avanzada en almacenamiento de datos es un conjunto de tecnologías y practicas que van más allá de la seguridad de datos básica para proteger la información confidencial de amenazas mas sofisticadas y complejas')">
+                <img src="datos.jpeg" alt="Seguridad de datos">
+            </div>
+        </div>
+    </section>
+
+    <a href="https://www.canva.com/design/DAGgKdTJCk4/-iPj2iFLL-VlomXO83ZHcA/view?utm_content=DAGgKdTJCk4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h72d4e6fd6e" class="boton" target="_blank">
+        Visitar Revista: De Residuo a Recurso
+    </a>
+</div>
+
+<footer>
+    &copy; 2025 ADEA México. Todos los derechos reservados.<em> Diana Leticia Lara Cruz</em>
+</footer>
+
+<script>
+    function mostrarInfo(mensaje) {
+        alert("Información: " + mensaje);
+    }
+</script>
+
+</body>
+</html>
