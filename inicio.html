@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEA México</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #004080;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        .zoom-container {
+            display: inline-block;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+
+        .zoom-container.zoomed {
+            transform: scale(2); /* Cambia el tamaño de zoom aquí */
+            cursor: zoom-out;
+            z-index: 10;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¿Qué es ADEA?</h1>
+    <p>ADEA es una empresa especializada en la transformación digital, el almacenamiento físico y la gestión de todo tipo de documentos. Además, ofrece servicios integrales de gestión documental en formato digital y físico.</p>
+
+    <div class="zoom-container" id="zoomImage">
+        <img src="adea.jpeg" alt="ADEA imagen representativa">
+    </div>
+
+    <script>
+        const zoomContainer = document.getElementById('zoomImage');
+
+        zoomContainer.addEventListener('click', () => {
+            zoomContainer.classList.toggle('zoomed');
+        });
+    </script>
+
+</body>
+</html>

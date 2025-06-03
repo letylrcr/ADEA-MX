@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEA México</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #004080;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.5;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .zoom-container {
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .zoom-container img {
+            width: 100%;
+            max-width: 600px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Zoom al hacer hover (PC) o active (táctil) */
+        .zoom-container img:hover,
+        .zoom-container img:active {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Somos ADEA México</h1>
+    <p>Llevamos más de 20 años dedicándonos a todos los aspectos relacionados con la administración documental.  
+    Hemos ayudado a cientos de empresas a resguardar y gestionar más eficientemente su información en toda clase de soportes, poniendo el foco en la transformación digital.</p>
+
+    <div class="zoom-container">
+        <img src="Nosotros.jpeg" alt="Imagen ADEA México">
+    </div>
+
+</body>
+</html>

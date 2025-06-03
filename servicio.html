@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #004080;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            color: #333;
+            padding: 5px 0;
+        }
+        strong {
+            color: #004080;
+        }
+
+        /* Estilo para la imagen */
+        .zoom-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .zoom-container input {
+            display: none;
+        }
+
+        .zoom-container label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .zoom-container img {
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .zoom-container input:checked + label img {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Servicios</h1>
+    
+    <div class="zoom-container">
+        <input type="checkbox" id="zoomToggle">
+        <label for="zoomToggle">
+            <img src="servicios.jpeg" alt="Imagen de servicios">
+        </label>
+    </div>
+
+    <div class="container">
+        <p><strong>Servicios integrales de gestión documental en formato digital:</strong></p>
+        <ul>
+            <li>Onboarding</li>
+            <li>Almacenamiento de archivo</li>
+            <li>Administración documental</li>
+            <li>BPO</li>
+            <li>Servicios especializados</li>
+            <li>Transformación digital</li>
+        </ul>
+        <p><strong>Soluciones por sector:</strong></p>
+        <ul>
+            <li>Educativo</li>
+            <li>Financiero</li>
+            <li>Gubernamental</li>
+            <li>Industrial</li>
+            <li>Comercial</li>
+            <li>Salud y servicios</li>
+        </ul>
+    </div>
+
+</body>
+</html>
